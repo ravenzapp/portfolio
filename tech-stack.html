@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jan Raven D. Zapata – Full Tech Stack</title>
+  <meta name="description" content="Comprehensive tech stack and technical skills of Jan Raven D. Zapata - IT student and developer."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    (function() {
+      const themeKey = 'jrz-theme';
+      const savedTheme = localStorage.getItem(themeKey);
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      }
+    })();
+  </script>
+  <style>
+    body { font-family: 'Geist', ui-sans-serif, system-ui; -webkit-font-smoothing: antialiased; }
+    .fade-in { animation: fadeIn 0.4s ease-out both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .stagger > * { animation: fadeIn 0.4s ease-out both; }
+    .stagger > *:nth-child(1) { animation-delay: 0s; }
+    .stagger > *:nth-child(2) { animation-delay: 0.1s; }
+    .stagger > *:nth-child(3) { animation-delay: 0.2s; }
+    .stagger > *:nth-child(n+4) { animation-delay: 0.3s; }
+    .hover-lift { @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+  </style>
+</head>
+<body class="antialiased bg-gray-50 dark:bg-black text-gray-900 dark:text-white min-h-screen">
+
+  <!-- Page Container -->
+  <div class="flex-grow w-full">
+    
+    <main class="max-w-5xl mx-auto px-4 py-12">
+      
+      <!-- Page Header -->
+      <div class="mb-12 fade-in">
+        <a href="index.html" class="inline-flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium mb-6 group">
+          <i class="fas fa-arrow-left text-sm transition-transform group-hover:-translate-x-1"></i>
+          <span>Back to Home</span>
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">Full Tech Stack</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Comprehensive list of tools and technologies I work with.</p>
+      </div>
+
+      <!-- Tech Stack Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 stagger">
+                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
+            <i class="fas fa-laptop-code text-gray-500 dark:text-gray-400 text-lg"></i>
+            Frontend          </h2>
+          <div class="flex flex-wrap gap-2">
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              HTML            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              CSS            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              JavaScript            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              TypeScript            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              React            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Next.js            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Vue.js            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Tailwind CSS            </span>
+                      </div>
+        </section>
+                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
+            <i class="fas fa-server text-gray-500 dark:text-gray-400 text-lg"></i>
+            Backend &amp; Database          </h2>
+          <div class="flex flex-wrap gap-2">
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Node.js            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              PHP            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Laravel            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Python            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              MySQL            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              PostgreSQL            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              MongoDB            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Firebase            </span>
+                      </div>
+        </section>
+                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
+            <i class="fas fa-cloud text-gray-500 dark:text-gray-400 text-lg"></i>
+            Cloud &amp; DevOps          </h2>
+          <div class="flex flex-wrap gap-2">
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              AWS            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Docker            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Kubernetes            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              GitHub Actions            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              CI/CD            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Cloud Computing            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Cloud Infrastructure            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              IaaS            </span>
+                      </div>
+        </section>
+                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
+            <i class="fas fa-tools text-gray-500 dark:text-gray-400 text-lg"></i>
+            Tools &amp; Version Control          </h2>
+          <div class="flex flex-wrap gap-2">
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Git &amp; GitHub            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              VS Code            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              GitHub Pages            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              XAMPP            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Composer            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              npm            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Postman            </span>
+                      </div>
+        </section>
+                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
+            <i class="fas fa-palette text-gray-500 dark:text-gray-400 text-lg"></i>
+            Design &amp; Multimedia          </h2>
+          <div class="flex flex-wrap gap-2">
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Adobe Photoshop            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Figma            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Canva            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Video Editing            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Graphic Design            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Wireframing            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Prototyping            </span>
+                      </div>
+        </section>
+                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
+            <i class="fas fa-brain text-gray-500 dark:text-gray-400 text-lg"></i>
+            Specialized Skills          </h2>
+          <div class="flex flex-wrap gap-2">
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Cybersecurity            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              IoT            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Embedded Systems            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              AI Fundamentals            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              System Administration            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Network Troubleshooting            </span>
+                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
+              Hardware Maintenance            </span>
+                      </div>
+        </section>
+              </div>
+
+     
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 py-8 border-t border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-[#0d0d0d]/50">
+      <div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-600 dark:text-gray-400">
+        <p class="mb-2">© 2026 Jan Raven D. Zapata. All Rights Reserved.</p>
+        <p>Developed with passion | Sto. Tomas, Pampanga, Philippines</p>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+</body>
+</html>

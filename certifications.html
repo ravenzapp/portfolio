@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Jan Raven D. Zapata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('jrz-theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark');
+            } else {
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.classList.add('dark');
+                }
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <style>
+        .hover-lift { transition: all 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        .fade-in { animation: fadeIn 0.4s ease-out both; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .stagger > * { animation: fadeIn 0.4s ease-out both; }
+        .stagger > *:nth-child(1) { animation-delay: 0s; }
+        .stagger > *:nth-child(2) { animation-delay: 0.1s; }
+        .stagger > *:nth-child(3) { animation-delay: 0.2s; }
+        .stagger > *:nth-child(n+4) { animation-delay: 0.3s; }
+        .cert-img-container { width: 100%; height: 224px; overflow: hidden; border-radius: 0.5rem; background: #f3f4f6; border: 1px solid #e5e7eb; margin-bottom: 1.5rem; }
+        .cert-main-img { width: 100%; height: 100%; object-fit: cover; }
+        .badge-small { width: 42px; height: 42px; border-radius: 4px; background: white; padding: 2px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: 1px solid #eee; flex-shrink: 0; }
+    </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen">
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <div class="mb-12">
+            <a href="index.html" class="inline-flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium mb-6 group">
+                <i class="fas fa-arrow-left text-sm transition-transform group-hover:-translate-x-1"></i> <span>Back to Home</span>
+            </a>
+            <h1 class="text-4xl font-bold">Certifications</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Professional credentials and technical training history.</p>
+        </div>
+
+        <div id="cert-container" class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger"></div>
+
+        <div class="mt-16 flex flex-col items-center gap-6">
+            <div id="pagination-numbers" class="flex gap-2"></div>
+            <div class="flex gap-4">
+                <button id="prev-btn" class="px-6 py-2 rounded-lg border border-gray-200 dark:border-[#2a2a2a] hover:bg-gray-100 dark:hover:bg-[#111111] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md hover:-translate-y-0.5 transition-all">Prev</button>
+                <button id="next-btn" class="px-6 py-2 rounded-lg border border-gray-200 dark:border-[#2a2a2a] hover:bg-gray-100 dark:hover:bg-[#111111] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md hover:-translate-y-0.5 transition-all">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="certModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" onclick="closeCertModal()">
+        <img id="modalImage" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl" onclick="event.stopPropagation()">
+    </div>
+
+    <script>
+        const certifications = [{"title":"Security and Connectivity Support","issuer":"Cisco","date":"Mar 2026","skills":"Attack Methods, Command-Line Tools, Connectivity Troubleshooting, Network Support","badge":"https:\/\/i.ibb.co\/q343vVnc\/security-and-connectivity-support.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQHIrfIljHWqpw\/profile-treasury-document-images_480\/B56Z0D4MLMHoAk-\/1\/1773886557035?e=1775692800&v=beta&t=-2zqf9TO_D5RG35_rcZa24ld16mlbgnU0ULGDYcCcpY","hyperlink":"https:\/\/www.linkedin.com\/redir\/redirect\/?url=https%3A%2F%2Fwww.credly.com%2Fbadges%2F2e6db5e8-6fb3-482c-9ea9-d2ebd493e1d0%2Flinked_in_profile&urlhash=4KyY"},{"title":"Hardware and Upgrade Support","issuer":"Cisco","date":"Mar 2026","skills":"Component Installation, Failure Analysis, Hardware Troubleshooting, Safety Practices","badge":"https:\/\/i.ibb.co\/ZR0MgFbS\/hardware-and-upgrade-support.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQG86k-xKEFRQA\/profile-treasury-document-cover-images_1920\/B56ZysC1aPGoBM-\/0\/1772412954057?e=1775095200&v=beta&t=prthe3zFU__cgFRaBsns7OW7nFTA5T8bmVCI9nNV-jU","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"IT Customer Support Basics","issuer":"Cisco","date":"Feb 2026","skills":"Customer Service, Help Desk Concepts, Remote Troubleshooting, Technical Problem Solving","badge":"https:\/\/i.ibb.co\/qYbyC9VT\/it-customer-support-basics.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQF0gYTOiFYLGQ\/profile-treasury-document-cover-images_1920\/B56ZyX2yrQIcBM-\/0\/1772074251892?e=1775095200&v=beta&t=hoVFtOEvOmR8x56K7Gu9MRygFtyFmeK-CMZlHQow47g","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"IBM Z Day 2025 - AI & Data","issuer":"IBM","date":"Dec 2025","skills":"Enterprise AI, AI Strategy, Data Literacy","badge":"https:\/\/i.ibb.co\/HTYrzJC5\/ibm-z-day-2025-ai-data.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQEkFalFTwvY9g\/profile-treasury-document-cover-images_480\/B56Zrm5tH0LABI-\/0\/1764810479457?e=1775095200&v=beta&t=hI2g1sz4U_yVmuv9ZezcS2k0OqUcD-NDi_6psyalw-E","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"IBM Z Day 2025 - IBM Z Skills","issuer":"IBM","date":"Dec 2025","skills":"Mainframe Technology, IBM Z Skills","badge":"https:\/\/i.ibb.co\/chKvc7M7\/ibm-z-day-2025-ibm-z-skills.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQEBhggL8Tr2hw\/profile-treasury-document-cover-images_480\/B56Zrm4IhYHYBI-\/0\/1764810067686?e=1775095200&v=beta&t=jIcqpRU2Mfvtrc5QLbU5tKdDqZGVNVKo4e665iQaBYw","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"IBM Z Day 2025 - Modernization","issuer":"IBM","date":"Dec 2025","skills":"Enterprise Modernization, Hybrid Cloud","badge":"https:\/\/i.ibb.co\/SXRM4BKn\/ibm-z-day-2025-modernization.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQGJN-iDzERB9A\/profile-treasury-document-cover-images_1920\/B56Zrm3rjFLoBQ-\/0\/1764809948872?e=1775095200&v=beta&t=1Jkhm2QpjeQ7rPjAP5MqzVBXhqlALLZ0Ku1l1Y591O8","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"IBM Z Day 2025 - Security","issuer":"IBM","date":"Dec 2025","skills":"Enterprise Security, IBM Z Systems","badge":"https:\/\/i.ibb.co\/JR48b4nx\/ibm-z-day-2025-security.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQHn1dZR9EUKug\/profile-treasury-document-cover-images_480\/B56Zrm3cA3LIBI-\/0\/1764809885071?e=1775095200&v=beta&t=ZxTG3odwJj6UvL90RiWcdmRgCD8c1AnOGycSdLyIgZA","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Introduction to Modern AI","issuer":"Cisco","date":"Nov 2025","skills":"Machine Learning, Computer Vision, Prompting Tips","badge":"https:\/\/i.ibb.co\/Swtm6Qk3\/introduction-to-modern-ai.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQHVQiD34PkP5A\/profile-treasury-document-cover-images_800\/B56ZqFoyA.JYA8-\/0\/1763178656127?e=1775095200&v=beta&t=7Yk8VdEAeNfLND_xwl0XLxr4-0w_DQrBb-WYOI4Bauw","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Using Computer and Mobile Devices","issuer":"Cisco","date":"Oct 2025","skills":"Digital Literacy, OS Concepts, Mobile Concepts","badge":"https:\/\/i.ibb.co\/3YPJVGHH\/using-computer-and-mobile-devices.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQGoxZJChGQzzw\/profile-treasury-document-cover-images_1280\/B56Zncd64tHAAw-\/0\/1760340457766?e=1775095200&v=beta&t=URqDvd165IsoNg-2TLMwuzJeOAofqNMls0kcV4aSrkU","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Digital Awareness","issuer":"Cisco","date":"Oct 2025","skills":"Digital Literacy, Web Navigation, Password Security","badge":"https:\/\/i.ibb.co\/BVfZWyzt\/digital-awareness.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQF8dBbVPoaVgA\/profile-treasury-document-cover-images_480\/B56ZnXMwwmI4BI-\/0\/1760252074041?e=1775095200&v=beta&t=n1BWLi5ezoNrUqkyS49uiOp4fe2rI33mYGvha6hauTo","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Information Technology Fundamentals","issuer":"IBM","date":"Oct 2025","skills":"Networking, IT Support, Hardware, Troubleshooting","badge":"https:\/\/i.ibb.co\/PzZC8PHZ\/information-technology-fundamentals.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQE1tBy4HggRqQ\/profile-treasury-document-cover-images_480\/B56Zm.ZZ3GKABI-\/0\/1759835955989?e=1775095200&v=beta&t=nWI5w4zNZGbPu6xWZwJ9iKPk1AHtmdBx-Xtoidwv610","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Introduction to IoT","issuer":"Cisco","date":"Oct 2025","skills":"IoT, Digital Transformation, Network Communication","badge":"https:\/\/i.ibb.co\/MLpp0Kz\/introduction-to-iot.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQHqMeLGp98MEg\/profile-treasury-document-cover-images_1920\/B56ZmeMh3HIsBM-\/0\/1759295711510?e=1775095200&v=beta&t=dnpyq09s2yFG2Hg6vrjAfX76A3M9EZeajViyUkUh4TU","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Microsoft AI (Azure AI Fundamentals)","issuer":"TESDA","date":"Sep 2025","skills":"Azure AI, Machine Learning, Cloud Services","badge":"https:\/\/tesdamimaropa.com\/wp-content\/uploads\/2016\/09\/Tesda-Logo.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQFCfqeOrr2K6Q\/profile-treasury-document-cover-images_1920\/B56ZmOkt3CKABM-\/0\/1759033615978?e=1775095200&v=beta&t=fhaOKovOAsfrQnFT8TNFvBEE4ygJLxFCMwx-gPmiFDY","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Developing Designs for a Logo","issuer":"TESDA","date":"Sep 2025","skills":"Graphic Design, Branding, Logo Identity","badge":"https:\/\/tesdamimaropa.com\/wp-content\/uploads\/2016\/09\/Tesda-Logo.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQFON3ykO_IEpQ\/profile-treasury-document-cover-images_1280\/B56ZmJpgL5IAAw-\/0\/1758950984482?e=1775095200&v=beta&t=s7uM7zr6lEU_481we55Iam-a8i_n1hqPZG9msSCPK-4","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Developing Designs for UX","issuer":"TESDA","date":"Sep 2025","skills":"UX Design, User Interaction, Prototyping","badge":"https:\/\/tesdamimaropa.com\/wp-content\/uploads\/2016\/09\/Tesda-Logo.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQHkzGyH75htHw\/profile-treasury-document-cover-images_1920\/B56ZmJpOxfHUBM-\/0\/1758950913230?e=1775095200&v=beta&t=S6AZ6x_19Kr2RnptkEPkBw9ErdPDQFmSBqlzxtk2AKY","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Developing Designs for UI","issuer":"TESDA","date":"Sep 2025","skills":"UI Design, Visual Layouts, Prototyping","badge":"https:\/\/tesdamimaropa.com\/wp-content\/uploads\/2016\/09\/Tesda-Logo.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQFhruka7Kh8DQ\/profile-treasury-document-cover-images_1280\/B56ZmJo34EKAAw-\/0\/1758950819143?e=1775095200&v=beta&t=xwYv_fPm2_gV0gk7_EvxewX9-7IrACZM_ccvxlhUxrE","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Introduction to Visual Graphic Design","issuer":"TESDA","date":"Sep 2025","skills":"Graphic Arts, Layout Design","badge":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSI6KWWJv7MSag_lKLKxOJ7MDTj9-tUv_49Nw&s","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQHFbUWrwODXDQ\/profile-treasury-document-images_480\/B56ZmJoQd4I0Ak-\/1\/1758950657654?e=1775692800&v=beta&t=nG7UvVXR7fvO6lI47M_DCJ6EB42qPKk8qCKZ3oDQBGE","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Computer Hardware Basics","issuer":"Cisco","date":"Sep 2025","skills":"Hardware Maintenance, Laptops, Mobile Devices","badge":"https:\/\/i.ibb.co\/QvLRFS7g\/computer-hardware-basics.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQFZO7Iek195wg\/profile-treasury-document-cover-images_800\/B56ZmJgha0I8BA-\/0\/1758948631671?e=1775095200&v=beta&t=aACMe286DT0YGhiFcnHX3UO5wsstNXIjyB5kPrCn6yg","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Artificial Intelligence Fundamentals","issuer":"IBM","date":"Sep 2025","skills":"Machine Learning, NLP, Deep Learning, AI Ethics","badge":"https:\/\/i.ibb.co\/xKw1kvVw\/artificial-intelligence-fundamentals.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQGppiyr3Yv56A\/profile-treasury-document-cover-images_800\/B56ZmJf37CHUA8-\/0\/1758948459686?e=1775095200&v=beta&t=_luR39tS5h9TVZdKD7chcmdMjTZpo_HKDH8J_PsjSQY","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Introduction to Cybersecurity","issuer":"Cisco","date":"Sep 2025","skills":"Cyber Best Practices, Threat Detection, Network Vulnerabilities","badge":"https:\/\/i.ibb.co\/xq8GwtkK\/introduction-to-cybersecurity.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQFPK_mr32wTsQ\/profile-treasury-document-images_480\/B56ZmJgrZdKwAk-\/1\/1758948671696?e=1775692800&v=beta&t=DZZeq5Oa0pX5fJuDcI1yTt0D0Zp-do3ma5l1aS4auGY","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"What Is Generative AI?","issuer":"LinkedIn Learning","date":"Sep 2025","skills":"Generative AI, AI Tools, Data Concepts","badge":"https:\/\/media.licdn.com\/dms\/image\/v2\/C560BAQHaVYd13rRz3A\/company-logo_100_100\/company-logo_100_100\/0\/1638831590218\/linkedin_logo?e=1774492759&v=beta&t=EiqhA21z1zaaDWpBQpb_8JK0-eOUTOAsfC8MdWVOxS8","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D5622AQHgj7WIX_zcAw\/feedshare-shrink_800\/B56ZlmFoWXH8Ag-\/0\/1758354376317?e=1774492759&v=beta&t=P7FeAD1Lw7bBmN3nIwKuzKpPHCLN_mmGMGWrz-17vf4","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Generative AI Leader","issuer":"Google Cloud Security","date":"Sep 2025","skills":"AI Product Strategy, AI Security, Gemini, Data Literacy","badge":"https:\/\/d3njjcbhbojbot.cloudfront.net\/api\/utilities\/v1\/imageproxy\/http:\/\/coursera-university-assets.s3.amazonaws.com\/74\/fa9028074941789429dfc1d1b71ddf\/gc-logo-360x360.png?auto=format%2Ccompress&dpr=2&w=80&h=80","cert_img":"https:\/\/s3.amazonaws.com\/coursera_assets\/meta_images\/generated\/CERTIFICATE_LANDING_PAGE\/CERTIFICATE_LANDING_PAGE~3YXH5O580TBC\/CERTIFICATE_LANDING_PAGE~3YXH5O580TBC.jpeg","hyperlink":"https:\/\/www.coursera.org\/account\/accomplishments\/specialization\/3YXH5O580TBC"},{"title":"Cloud Computing Fundamentals","issuer":"IBM","date":"Sep 2025","skills":"Cloud Infrastructure, IaaS, PaaS, SaaS, Docker","badge":"https:\/\/i.ibb.co\/Jwwxc3L6\/cloud-computing-fundamentals.png","cert_img":"https:\/\/media.licdn.com\/dms\/image\/v2\/D562DAQEhwmkEz6WAbw\/profile-treasury-document-cover-images_800\/B56ZmJgTG0HkA8-\/0\/1758948570912?e=1775095200&v=beta&t=H9MY1WwNiZerJP5Bmdog8a7hr93BXcII5ChGQ9ZaLXI","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Cybersecurity Awareness Learner 2025","issuer":"CertiProf","date":"Mar 2025","skills":"Cyber Hygiene, Digital Awareness","badge":"https:\/\/media.licdn.com\/dms\/image\/v2\/D4E0BAQH1qwoIk9cWIQ\/company-logo_100_100\/company-logo_100_100\/0\/1724256453909\/certiprof_logo?e=1776297600&v=beta&t=CvriN_wAAu786CSF6f2U-rFr0WTJs7UetwU2o2gO4-I","cert_img":"https:\/\/i.ibb.co\/LdDdYLyY\/cybersecurity-awareness-learner-2025.png","hyperlink":"https:\/\/www.linkedin.com\/in\/jrdzapata\/details\/certifications\/"},{"title":"Canva for Work","issuer":"Canva","date":"Sep 2025","skills":"Brand Identity, Presentation Design","badge":"https:\/\/1000logos.net\/wp-content\/uploads\/2020\/03\/Canva-icon.png","cert_img":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/24f603aa-0269-4077-bd5f-d2f2f4e982ed","hyperlink":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/24f603aa-0269-4077-bd5f-d2f2f4e982ed"},{"title":"Marketing with Canva","issuer":"Canva","date":"Sep 2025","skills":"Social Media Marketing, Visual Branding","badge":"https:\/\/1000logos.net\/wp-content\/uploads\/2020\/03\/Canva-icon.png","cert_img":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/da61d72b-299b-44a4-b3f8-eedcea082d38","hyperlink":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/da61d72b-299b-44a4-b3f8-eedcea082d38"},{"title":"AI in the Classroom","issuer":"Canva","date":"Sep 2025","skills":"Edu-Tech, AI Implementation","badge":"https:\/\/1000logos.net\/wp-content\/uploads\/2020\/03\/Canva-icon.png","cert_img":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/0e927a56-a1fd-4137-89d8-4bd8d9f8937d","hyperlink":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/0e927a56-a1fd-4137-89d8-4bd8d9f8937d"},{"title":"Graphic Design Essentials","issuer":"Canva","date":"Sep 2025","skills":"Visual Communication, Digital Design","badge":"https:\/\/1000logos.net\/wp-content\/uploads\/2020\/03\/Canva-icon.png","cert_img":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/9c225b6e-1599-4501-b314-5ce36b152a53","hyperlink":"https:\/\/www.canva.com\/en\/design-school\/certification-award\/9c225b6e-1599-4501-b314-5ce36b152a53"}];
+        const itemsPerPage = 6;
+        let currentPage = 1;
+
+        function render() {
+            const container = document.getElementById('cert-container');
+            container.innerHTML = '';
+            
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageCerts = certifications.slice(start, end);
+
+            pageCerts.forEach(cert => {
+                const card = document.createElement('div');
+                card.className = 'bg-white dark:bg-[#111111] p-6 rounded-xl border border-gray-200 dark:border-[#2a2a2a] shadow-sm hover-lift';
+                
+                const skillsHTML = `<p class="text-[10px] text-gray-400 dark:text-gray-500 mt-2 font-medium uppercase tracking-wider">Top Skills: ${cert.skills}</p>`;
+                
+                if (cert.issuer === "Canva") {
+                    card.innerHTML = `
+                        <div class="flex items-center justify-between gap-4">
+                            <div class="min-w-0">
+                                <h2 class="text-lg font-bold text-gray-900 dark:text-white leading-tight mb-1">
+                                    <a href="${cert.hyperlink}" target="_blank" class="hover:text-gray-900 dark:hover:text-white transition-colors hover:underline underline-offset-4">${cert.title}</a>
+                                </h2>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">${cert.issuer} • ${cert.date}</p>
+                                ${skillsHTML}
+                            </div>
+                            <div class="badge-small bg-white flex items-center justify-center">
+                                <img src="${cert.badge}" class="max-w-full max-h-full object-contain" alt="Badge">
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    card.innerHTML = `
+                        <div class="cert-img-container cursor-pointer" onclick="openCertModal('${cert.cert_img}')">
+                            <img src="${cert.cert_img}" class="cert-main-img" alt="${cert.title}">
+                        </div>
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="min-w-0">
+                                <h2 class="text-lg font-bold text-gray-900 dark:text-white leading-tight mb-1">
+                                    <a href="${cert.hyperlink}" target="_blank" class="hover:text-gray-900 dark:hover:text-white transition-colors hover:underline underline-offset-4">${cert.title}</a>
+                                </h2>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">${cert.issuer} • ${cert.date}</p>
+                                ${skillsHTML}
+                            </div>
+                            <div class="badge-small bg-white flex items-center justify-center">
+                                <img src="${cert.badge}" class="max-w-full max-h-full object-contain" alt="Badge">
+                            </div>
+                        </div>
+                    `;
+                }
+                container.appendChild(card);
+            });
+            renderNumbers();
+        }
+
+        function renderNumbers() {
+            const nums = document.getElementById('pagination-numbers');
+            nums.innerHTML = '';
+            const total = Math.ceil(certifications.length / itemsPerPage);
+            for(let i=1; i<=total; i++) {
+                const b = document.createElement('button');
+                b.innerText = i;
+                b.className = `w-10 h-10 rounded-lg transition ${i === currentPage ? 'bg-black text-white dark:bg-white dark:text-black' : 'border border-gray-200 dark:border-[#2a2a2a] hover:bg-gray-100 dark:hover:bg-[#111111]'}`;
+                b.onclick = () => { currentPage = i; render(); window.scrollTo(0,0); };
+                nums.appendChild(b);
+            }
+        }
+
+        window.openCertModal = (src) => {
+            const modal = document.getElementById('certModal');
+            document.getElementById('modalImage').src = src;
+            modal.classList.replace('hidden', 'flex');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeCertModal = () => {
+            const modal = document.getElementById('certModal');
+            modal.classList.replace('flex', 'hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        document.getElementById('prev-btn').onclick = () => { if(currentPage > 1) { currentPage--; render(); window.scrollTo(0,0); } };
+        document.getElementById('next-btn').onclick = () => { if(currentPage < Math.ceil(certifications.length/itemsPerPage)) { currentPage++; render(); window.scrollTo(0,0); } };
+        
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCertModal(); });
+
+        render();
+    </script>
+</body>
+</html>

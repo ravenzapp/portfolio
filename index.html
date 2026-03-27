@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jan Raven D. Zapata – IT Portfolio</title>
+<meta name="description" content="Information Technology student specializing in programming, web development, IoT, and cybersecurity. Available for IT internship or entry-level roles."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: 'class' };
+  
+  (function() {
+    const themeKey = 'jrz-theme';
+    const savedTheme = localStorage.getItem(themeKey);
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else if (savedTheme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+    }
+  })();
+</script>
+<style>
+  body { font-family: 'Geist', ui-sans-serif, system-ui; -webkit-font-smoothing: antialiased; }
+  .fade-in { animation: fadeIn 0.4s ease-out both; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .hover-lift { @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+  .stagger > * { animation: fadeIn 0.4s ease-out both; }
+  .stagger > *:nth-child(1) { animation-delay: 0s; }
+  .stagger > *:nth-child(2) { animation-delay: 0.1s; }
+  .stagger > *:nth-child(3) { animation-delay: 0.2s; }
+  .stagger > *:nth-child(n+4) { animation-delay: 0.3s; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen flex flex-col">
+
+<div class="flex-grow w-full">
+
+  <!-- HEADER -->
+  <header class="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-[#2a2a2a]">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-8">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 text-center md:text-left">
+        
+        <!-- Profile Image -->
+        <div class="relative w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-lg overflow-hidden flex-shrink-0 shadow-md">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQHJdnKwmUpTbA/profile-displayphoto-scale_400_400/B4DZubxHyQIEAg-/0/1767844904743?e=1775692800&amp;v=beta&amp;t=YSvzMiRnUOnQrFLLzMGAm6hj4N7X6GIGgTjL4icz4rI" alt="Jan Raven D. Zapata" 
+            class="w-full h-full object-cover" />
+        </div>
+        
+        <!-- Profile Info -->
+        <div class="flex-1 min-w-0 w-full">
+          <div class="flex items-center justify-center md:justify-between mb-2 flex-wrap gap-2">
+            <div class="flex items-center gap-2 flex-wrap justify-center md:justify-start">
+              <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white leading-tight">Jan Raven D. Zapata</h1>
+            </div>
+            <button id="darkModeToggle" class="w-10 h-10 flex items-center justify-center flex-shrink-0 rounded-lg border border-gray-300 dark:border-[#333333] transition-colors hover:bg-gray-100 dark:hover:bg-[#1e1e1e]">
+              <i class="far fa-moon text-gray-700 dark:text-gray-300 dark-icon hidden"></i>
+              <i class="far fa-sun text-gray-700 dark:text-gray-300 light-icon"></i>
+            </button>
+          </div>
+          
+          <div class="flex items-center justify-center md:justify-start gap-2 text-gray-600 dark:text-gray-400 mb-1">
+            <i class="fas fa-location-dot text-[10px]"></i>
+            <span class="text-[10px] md:text-xs">Sto. Tomas, Pampanga, Philippines</span>
+          </div>
+          
+          <p class="text-sm md:text-base text-gray-700 dark:text-gray-300 mt-2 mb-4 font-medium">
+            IT Student \ Developer \ Digital Artist          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-2.5 justify-center md:justify-start">
+            <a href="mailto:zapatajanraven@gmail.com" class="bg-black dark:bg-white text-white dark:text-black px-5 py-2.5 md:py-2 rounded-lg text-sm font-medium transition flex items-center justify-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-1">
+              <i class="fas fa-envelope text-xs"></i> Send Email
+            </a>
+            <a href="https://www.linkedin.com/in/jrdzapata" target="_blank" class="bg-white dark:bg-[#111111] border border-gray-200 dark:border-[#2a2a2a] text-gray-700 dark:text-white px-5 py-2.5 md:py-2 rounded-lg text-sm font-medium transition flex items-center justify-center gap-2 shadow-sm hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 hover:-translate-y-1">
+              <i class="fab fa-linkedin text-xs"></i> LinkedIn
+            </a>
+            <a href="tel:+639766058098" class="bg-white dark:bg-[#111111] border border-gray-200 dark:border-[#2a2a2a] text-gray-700 dark:text-white px-5 py-2.5 md:py-2 rounded-lg text-sm font-medium transition flex items-center justify-center gap-2 shadow-sm hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 hover:-translate-y-1">
+              <i class="fas fa-phone text-xs"></i> Call Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 py-3 sm:py-4 flex flex-col gap-3 sm:gap-4">
+      
+      <!-- TWO-COLUMN GRID -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4">
+        
+        <!-- LEFT COLUMN -->
+        <div class="lg:col-span-1 space-y-3 sm:space-y-4">
+          
+          <!-- About Me -->
+          <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 fade-in hover-lift">
+            <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              Aspiring IT professional currently serving as an IT Intern at Pampanga III Electric Cooperative, with hands-on experience in technical support, web-based system development (HTML, PHP, MySQL, XAMPP), system maintenance, and network troubleshooting. Experienced freelance digital artist, graphic designer, and video editor since 2021 with a strong track record in client communication, project delivery, and quality assurance. Skilled in cloud computing, cybersecurity, AI fundamentals, and modern design tools, and committed to building scalable technology solutions with a client-first mindset.            </p>
+          </section>
+          
+          <!-- Education -->
+          <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 fade-in hover-lift">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Education</h2>
+              <a href="education.html" class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline transition">View All</a>
+            </div>
+            <div class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white">Pampanga State University</p>
+                <p class="text-xs text-gray-600 dark:text-gray-400">BS Information Technology (2022 – Present)</p>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white">Emigdio A. Bondoc Senior High School</p>
+                <p class="text-xs text-gray-600 dark:text-gray-400">Senior High ICT (2020 – 2022)</p>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white">San Matias National High School</p>
+                <p class="text-xs text-gray-600 dark:text-gray-400">Junior High with Honors (2016 – 2020)</p>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Certifications -->
+          <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-5 sm:p-7 fade-in hover-lift">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Certifications</h2>
+              <a href="certifications.html" class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline transition">View All</a>
+            </div>
+            <div class="space-y-2">
+                            <button onclick="openCertModal('https://media.licdn.com/dms/image/v2/D562DAQHIrfIljHWqpw/profile-treasury-document-images_480/B56Z0D4MLMHoAk-/1/1773886557035?e=1775692800&amp;v=beta&amp;t=-2zqf9TO_D5RG35_rcZa24ld16mlbgnU0ULGDYcCcpY')" class="w-full flex items-center justify-between gap-2 p-2 bg-gray-50 dark:bg-[#1e1e1e] rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition border border-gray-200 dark:border-[#333333] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm hover:-translate-y-0.5 text-left">
+                <div class="min-w-0">
+                  <h3 class="font-semibold text-gray-900 dark:text-white text-sm">Security and Connectivity Support</h3>
+                  <p class="text-xs text-gray-600 dark:text-gray-400">Cisco</p>
+                </div>
+                <div class="w-8 h-8 flex-shrink-0 rounded bg-white dark:bg-gray-600 flex items-center justify-center border border-gray-200 dark:border-[#444444] overflow-hidden">
+                  <img src="https://i.ibb.co/q343vVnc/security-and-connectivity-support.png" alt="Cisco" class="w-full h-full object-contain p-0.5" />
+                </div>
+              </button>
+                            <button onclick="openCertModal('https://media.licdn.com/dms/image/v2/D562DAQG86k-xKEFRQA/profile-treasury-document-cover-images_1920/B56ZysC1aPGoBM-/0/1772412954057?e=1775095200&amp;v=beta&amp;t=prthe3zFU__cgFRaBsns7OW7nFTA5T8bmVCI9nNV-jU')" class="w-full flex items-center justify-between gap-2 p-2 bg-gray-50 dark:bg-[#1e1e1e] rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition border border-gray-200 dark:border-[#333333] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm hover:-translate-y-0.5 text-left">
+                <div class="min-w-0">
+                  <h3 class="font-semibold text-gray-900 dark:text-white text-sm">Hardware and Upgrade Support</h3>
+                  <p class="text-xs text-gray-600 dark:text-gray-400">Cisco</p>
+                </div>
+                <div class="w-8 h-8 flex-shrink-0 rounded bg-white dark:bg-gray-600 flex items-center justify-center border border-gray-200 dark:border-[#444444] overflow-hidden">
+                  <img src="https://i.ibb.co/ZR0MgFbS/hardware-and-upgrade-support.png" alt="Cisco" class="w-full h-full object-contain p-0.5" />
+                </div>
+              </button>
+                            <button onclick="openCertModal('https://media.licdn.com/dms/image/v2/D562DAQF0gYTOiFYLGQ/profile-treasury-document-cover-images_1920/B56ZyX2yrQIcBM-/0/1772074251892?e=1775095200&amp;v=beta&amp;t=hoVFtOEvOmR8x56K7Gu9MRygFtyFmeK-CMZlHQow47g')" class="w-full flex items-center justify-between gap-2 p-2 bg-gray-50 dark:bg-[#1e1e1e] rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition border border-gray-200 dark:border-[#333333] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm hover:-translate-y-0.5 text-left">
+                <div class="min-w-0">
+                  <h3 class="font-semibold text-gray-900 dark:text-white text-sm">IT Customer Support Basics</h3>
+                  <p class="text-xs text-gray-600 dark:text-gray-400">Cisco</p>
+                </div>
+                <div class="w-8 h-8 flex-shrink-0 rounded bg-white dark:bg-gray-600 flex items-center justify-center border border-gray-200 dark:border-[#444444] overflow-hidden">
+                  <img src="https://i.ibb.co/qYbyC9VT/it-customer-support-basics.png" alt="Cisco" class="w-full h-full object-contain p-0.5" />
+                </div>
+              </button>
+                          </div>
+          </section>
+          
+        </div>
+        <!-- END LEFT COLUMN -->
+        
+        <!-- RIGHT COLUMN -->
+        <div class="lg:col-span-2 space-y-3 sm:space-y-4">
+          
+          <!-- Experience -->
+          <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 fade-in hover-lift">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Experience</h2>
+              <a href="experience.html" class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline transition">View All</a>
+            </div>
+            <div class="space-y-4">
+                            <div class="flex items-start justify-between gap-4 pb-4 border-b border-gray-200 dark:border-[#2a2a2a] last:border-b-0 last:pb-0">
+                <div>
+                  <h3 class="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">IT Intern - Technical Support &amp; Software Development</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mt-0.5">Pampanga III Electric Cooperative, Inc.</p>
+                </div>
+                <span class="text-xs sm:text-sm text-gray-500 dark:text-gray-500 font-medium whitespace-nowrap">Feb 2026–Present</span>
+              </div>
+                            <div class="flex items-start justify-between gap-4 pb-4 border-b border-gray-200 dark:border-[#2a2a2a] last:border-b-0 last:pb-0">
+                <div>
+                  <h3 class="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">Freelance Digital Artist | Graphic Designer | Video Editor</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mt-0.5">Self-employed</p>
+                </div>
+                <span class="text-xs sm:text-sm text-gray-500 dark:text-gray-500 font-medium whitespace-nowrap">Feb 2021–Dec 2025</span>
+              </div>
+                          </div>
+          </section>
+          
+          <!-- Tech Stack (Moved from left column) -->
+          <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 fade-in hover-lift">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Tech Stack</h2>
+              <a href="tech-stack.html" class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline transition">View All</a>
+            </div>
+            
+            <div class="space-y-4">
+                            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white text-sm mb-3">Programming</h3>
+                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">C++</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Java</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Python</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">HTML</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">CSS</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">JavaScript</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">PHP</span>
+                                  </div>
+              </div>
+                            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white text-sm mb-3">Cloud &amp; Infra</h3>
+                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Cloud Computing</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Cloud Infrastructure</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Cloud Migration</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Cloud Security</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">AWS</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Azure</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Private Cloud</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Public Cloud</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">IaaS</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">PaaS</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">SaaS</span>
+                                  </div>
+              </div>
+                            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white text-sm mb-3">Tools &amp; Design</h3>
+                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Visual Studio Code</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">GitHub</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Trello</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Adobe Photoshop</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Canva</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Figma</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">MS Office Suite</span>
+                                  </div>
+              </div>
+                            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white text-sm mb-3">Hardware &amp; Security</h3>
+                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Hardware Troubleshooting</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Networking</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Cybersecurity</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">Embedded Systems</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">System Information</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">CCTV</span>
+                                    <span class="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 dark:border-[#333333] rounded-lg bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-gray-600 transition cursor-default">UPS Support</span>
+                                  </div>
+              </div>
+                          </div>
+          </section>
+          
+          <!-- Projects -->
+          <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 fade-in hover-lift">
+            <div class="flex justify-between items-center mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Technical Projects</h2>
+              <a href="projects.html" class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline transition">View All</a>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 stagger">
+                            <div class="border border-gray-200 dark:border-[#2a2a2a] rounded-lg p-3 sm:p-4 hover-lift fade-in">
+                <h3 class="font-semibold text-gray-900 dark:text-white text-base mb-2">Mobile App – Capstone</h3>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">Mobile-based application addressing a real-world problem using SDLC, usability &amp; security principles.</p>
+                <span class="inline-block text-xs font-medium text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-[#1e1e1e] px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+                  Capstone Project                </span>
+              </div>
+                            <div class="border border-gray-200 dark:border-[#2a2a2a] rounded-lg p-3 sm:p-4 hover-lift fade-in">
+                <h3 class="font-semibold text-gray-900 dark:text-white text-base mb-2">Smart Home IoT System</h3>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">IoT system with sensors &amp; microcontrollers for automated monitoring and control, programmed in C++.</p>
+                <span class="inline-block text-xs font-medium text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-[#1e1e1e] px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+                  IoT / Embedded                </span>
+              </div>
+                          </div>
+          </section>
+          
+        </div>
+        <!-- END RIGHT COLUMN -->
+        
+      </div>
+      <!-- END GRID -->
+      
+      <!-- FOOTER SECTION -->
+      <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 fade-in hover-lift w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-start">
+          <div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-extrabold text-gray-900 dark:text-white leading-tight mb-3">
+              Let's Connect
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Available for IT internship or entry-level roles. Open to discussing freelance opportunities in digital design and web development.
+            </p>
+            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">Follow Me</p>
+            <div class="flex flex-wrap gap-3">
+                            <a href="https://www.linkedin.com/in/jrdzapata" target="_blank" class="w-9 h-9 rounded-lg bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:-translate-y-1 transition-all border border-gray-200 dark:border-[#333333] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm">
+                <i class="fab fa-linkedin-in text-sm"></i>
+              </a>
+                            <a href="https://instagram.com/jrdzapata" target="_blank" class="w-9 h-9 rounded-lg bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:-translate-y-1 transition-all border border-gray-200 dark:border-[#333333] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm">
+                <i class="fab fa-instagram text-sm"></i>
+              </a>
+                            <a href="https://facebook.com/jrdzapata" target="_blank" class="w-9 h-9 rounded-lg bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:-translate-y-1 transition-all border border-gray-200 dark:border-[#333333] hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm">
+                <i class="fab fa-facebook-f text-sm"></i>
+              </a>
+                          </div>
+          </div>
+          
+          <div class="space-y-2 sm:space-y-2.5">
+            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Get in Touch</p>
+                        <a href="mailto:zapatajanraven@gmail.com"  class="flex items-center p-2.5 sm:p-3 border border-gray-200 dark:border-[#2a2a2a] rounded-lg hover:bg-gray-50 dark:hover:bg-[#1e1e1e] transition hover:-translate-y-1 hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 cursor-pointer">
+              <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+                <div class="w-9 h-9 rounded-xl bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-400 flex-shrink-0 text-sm">
+                  <i class="fas fa-envelope"></i>                </div>
+                <div class="min-w-0">
+                  <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">Email</span>
+                  <p class="text-sm text-gray-900 dark:text-white font-normal truncate">zapatajanraven@gmail.com</p>
+                </div>
+              </div>
+            </a>
+                        <a href="tel:+639766058098"  class="flex items-center p-2.5 sm:p-3 border border-gray-200 dark:border-[#2a2a2a] rounded-lg hover:bg-gray-50 dark:hover:bg-[#1e1e1e] transition hover:-translate-y-1 hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 cursor-pointer">
+              <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+                <div class="w-9 h-9 rounded-xl bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-400 flex-shrink-0 text-sm">
+                  <i class="fas fa-phone"></i>                </div>
+                <div class="min-w-0">
+                  <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">Phone</span>
+                  <p class="text-sm text-gray-900 dark:text-white font-normal truncate">(+63) 976 605 8098</p>
+                </div>
+              </div>
+            </a>
+                        <a href="https://www.linkedin.com/in/jrdzapata" target="_blank" rel="noopener" class="flex items-center p-2.5 sm:p-3 border border-gray-200 dark:border-[#2a2a2a] rounded-lg hover:bg-gray-50 dark:hover:bg-[#1e1e1e] transition hover:-translate-y-1 hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 cursor-pointer">
+              <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+                <div class="w-9 h-9 rounded-xl bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-400 flex-shrink-0 text-sm">
+                  <i class="fab fa-linkedin"></i>                </div>
+                <div class="min-w-0">
+                  <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">LinkedIn</span>
+                  <p class="text-sm text-gray-900 dark:text-white font-normal truncate">linkedin.com/in/jrdzapata</p>
+                </div>
+              </div>
+            </a>
+                      </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-white dark:bg-[#111111] border-t border-gray-200 dark:border-[#2a2a2a] mt-6">
+  <div class="max-w-5xl mx-auto px-6 py-5">
+    <div class="flex flex-col items-center justify-center gap-1 text-center">
+      <p class="text-sm text-gray-900 dark:text-white font-normal">
+        © 2026 Jan Raven D. Zapata. All Rights Reserved.
+      </p>
+      <p class="text-sm text-gray-600 dark:text-gray-400 font-normal">
+        Developed with passion | Sto. Tomas, Pampanga, Philippines
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Certificate Modal -->
+<div id="certModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" onclick="closeCertModal()">
+  <div class="relative" onclick="event.stopPropagation()">
+    <img id="modalImage" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl">
+    <button onclick="closeCertModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white dark:bg-[#111111] flex items-center justify-center text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-[#1e1e1e] transition-colors shadow-lg">
+      <i class="fas fa-times text-lg"></i>
+    </button>
+  </div>
+</div>
+
+<script>
+  // Dark Mode Toggle
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const html = document.documentElement;
+  const themeKey = 'jrz-theme';
+  
+  function updateThemeIcon() {
+    const isDark = html.classList.contains('dark');
+    document.querySelector('.dark-icon').classList.toggle('hidden', !isDark);
+    document.querySelector('.light-icon').classList.toggle('hidden', isDark);
+  }
+  
+  darkModeToggle.addEventListener('click', () => {
+    if (html.classList.contains('dark')) {
+      html.classList.remove('dark');
+      localStorage.setItem(themeKey, 'light');
+    } else {
+      html.classList.add('dark');
+      localStorage.setItem(themeKey, 'dark');
+    }
+    updateThemeIcon();
+  });
+  
+  updateThemeIcon();
+
+  // Certificate Modal Functions
+  function openCertModal(src) {
+    const modal = document.getElementById('certModal');
+    document.getElementById('modalImage').src = src;
+    modal.classList.replace('hidden', 'flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal() {
+    const modal = document.getElementById('certModal');
+    modal.classList.replace('flex', 'hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertModal();
+  });
+</script>
+
+</body>
+</html>
