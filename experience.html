@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jan Raven D. Zapata – Experience</title>
+  <meta name="description" content="Work experience and professional background of Jan Raven D. Zapata - IT professional and developer."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    (function() {
+      const themeKey = 'jrz-theme';
+      const savedTheme = localStorage.getItem(themeKey);
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      }
+    })();
+  </script>
+  <style>
+    body { font-family: 'Geist', ui-sans-serif, system-ui; -webkit-font-smoothing: antialiased; }
+    .fade-in { animation: fadeIn 0.4s ease-out both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .stagger > * { animation: fadeIn 0.4s ease-out both; }
+    .stagger > *:nth-child(1) { animation-delay: 0s; }
+    .stagger > *:nth-child(2) { animation-delay: 0.1s; }
+    .stagger > *:nth-child(3) { animation-delay: 0.2s; }
+    .stagger > *:nth-child(n+4) { animation-delay: 0.3s; }
+    .hover-lift { @apply transition-all duration-300 hover:shadow-md hover:-translate-y-0.5; }
+  </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen flex flex-col">
+  
+  <!-- Page Container -->
+  <div class="min-h-screen flex flex-col">
+    
+    <!-- Header with Navigation -->
+    <header class="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-[#2a2a2a] sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium group">
+          <i class="fas fa-arrow-left text-sm transition-transform group-hover:-translate-x-1"></i>
+          Back to Home
+        </a>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="flex-1 max-w-5xl mx-auto w-full px-3 sm:px-4 py-6 sm:py-8">
+      
+      <!-- Page Title -->
+      <section class="mb-8 sm:mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">Experience</h1>
+        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Professional work history and key achievements</p>
+      </section>
+      
+      <!-- Experience Cards -->
+      <div class="space-y-4 sm:space-y-5 stagger">
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow">
+          
+          <!-- Header -->
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4 mb-4">
+            <div class="flex-1">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">IT Intern — Technical Support &amp; Software Development</h2>
+              <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium mt-1">Pampanga III Electric Cooperative, Inc.</p>
+            </div>
+            <span class="inline-block px-3 py-1 rounded-md bg-gray-100 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-200 text-xs font-medium border border-gray-200 dark:border-[#333333] hover:bg-gray-200 dark:hover:bg-gray-600 transition whitespace-nowrap">
+              Currently Employed            </span>
+          </div>
+          
+          <!-- Meta Information -->
+          <div class="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 pb-4 border-b border-gray-100 dark:border-[#2a2a2a]">
+            <span class="flex items-center gap-1">
+              <i class="fas fa-calendar text-gray-400 text-[10px]"></i>
+              Feb 2026 – Present            </span>
+            <span class="flex items-center gap-1">
+              <i class="fas fa-map-pin text-gray-400 text-[10px]"></i>
+              Apalit, Central Luzon, Philippines            </span>
+            <span class="flex items-center gap-1">
+              <i class="fas fa-briefcase text-gray-400 text-[10px]"></i>
+              On-site            </span>
+          </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Primarily perform technical support duties while providing basic assistance in software development tasks. Assist in developing web-based systems using HTML, PHP, MySQL, and XAMPP. Support field operations and IT infrastructure maintenance across multiple branch offices.          </p>
+          
+          <!-- Responsibilities -->
+          <div class="mb-6">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Responsibilities</h3>
+            <ul class="space-y-1.5">
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Primarily perform technical support duties while providing basic assistance in software development tasks when needed</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Assist in the development of web-based systems by supporting planning, testing, and coding tasks</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Contribute to building and maintaining systems using HTML, PHP, MySQL, and XAMPP under supervision</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Assist in system development by supporting basic functionality implementation and system testing before deployment</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Assist in enhancing existing systems and provide minor technical input to support operational improvements</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Provide technical support by troubleshooting hardware, software, and basic network issues</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Perform field monitoring and maintenance of computer systems and IT equipment across multiple branch offices</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Install, configure, and maintain computers, printers, UPS units, and other office devices</span>
+              </li>
+                            </ul>
+          </div>
+          
+          <!-- Skills -->
+          <div>
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Skills</h3>
+            <div class="flex flex-wrap gap-2 justify-center items-center">
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Technical Support                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  PHP Development                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  MySQL Database                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Web Development                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  System Maintenance                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Network Setup                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Field Support                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Hardware Configuration                </span>
+                            </div>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow">
+          
+          <!-- Header -->
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4 mb-4">
+            <div class="flex-1">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Freelance Digital Artist | Graphic Designer | Video Editor</h2>
+              <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium mt-1">Self-employed</p>
+            </div>
+            <span class="inline-block px-3 py-1 rounded-md bg-gray-100 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-200 text-xs font-medium border border-gray-200 dark:border-[#333333] hover:bg-gray-200 dark:hover:bg-gray-600 transition whitespace-nowrap">
+              4yrs & 11mos           </span>
+          </div>
+          
+          <!-- Meta Information -->
+          <div class="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 pb-4 border-b border-gray-100 dark:border-[#2a2a2a]">
+            <span class="flex items-center gap-1">
+              <i class="fas fa-calendar text-gray-400 text-[10px]"></i>
+              Feb 2021 – Dec 2025            </span>
+            <span class="flex items-center gap-1">
+              <i class="fas fa-map-pin text-gray-400 text-[10px]"></i>
+              Pampanga, Central Luzon, Philippines            </span>
+            <span class="flex items-center gap-1">
+              <i class="fas fa-briefcase text-gray-400 text-[10px]"></i>
+              Remote            </span>
+          </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Managed end-to-end graphic design projects with exceptional quality and client satisfaction. Designed logos, branding assets, social media graphics, marketing materials, and specialized Lapida (memorial) templates with 99.999% accuracy in details.          </p>
+          
+          <!-- Responsibilities -->
+          <div class="mb-6">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Responsibilities</h3>
+            <ul class="space-y-1.5">
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Managed end-to-end graphic design projects from concept to final delivery with 99.999% client satisfaction</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Designed diverse visual materials: logos, branding assets, social media graphics, marketing layouts, and customized templates</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Created Lapida (memorial) design templates with respectful typography, culturally appropriate layouts, and 99.999% accuracy in names, dates, and inscriptions</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Edited and produced promotional and instructional videos</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Collaborated closely with clients to transform ideas into meaningful designs meeting all specifications</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Applied strong project coordination and documentation practices, tracking revisions and approvals</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Managed project timelines and delivered quality work within deadlines</span>
+              </li>
+                              <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Maintained client relationships and handled revisions professionally</span>
+              </li>
+                            </ul>
+          </div>
+          
+          <!-- Skills -->
+          <div>
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Skills</h3>
+            <div class="flex flex-wrap gap-2 justify-center items-center">
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Logo Design                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Branding                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Adobe Creative Suite                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Social Media Design                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Video Editing                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Client Communication                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Project Management                </span>
+                              <span class="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-[#3a3a3a] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#1a1a1a] dark:to-[#0f0f0f] text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:from-[#2a2a2a] dark:hover:to-[#1a1a1a] transition-colors">
+                  Quality Assurance                </span>
+                            </div>
+          </div>
+          
+        </article>
+              </div>
+      
+    </main>
+    
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-[#2a2a2a] bg-white dark:bg-[#111111] mt-10 sm:mt-12">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        <p class="mb-3">© 2026 Jan Raven D. Zapata. All Rights Reserved.</p>
+        <p class="text-gray-500 dark:text-gray-500">Sto. Tomas, Pampanga, Philippines</p>
+      </div>
+    </footer>
+    
+  </div>
+  
+
+  
+</body>
+</html>

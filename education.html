@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jan Raven D. Zapata – Education</title>
+  <meta name="description" content="Education background of Jan Raven D. Zapata - IT student at Pampanga State University with ICT specialization."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    (function() {
+      const themeKey = 'jrz-theme';
+      const savedTheme = localStorage.getItem(themeKey);
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      }
+    })();
+  </script>
+  <style>
+    body { font-family: 'Geist', ui-sans-serif, system-ui; -webkit-font-smoothing: antialiased; }
+    .fade-in { animation: fadeIn 0.4s ease-out both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .stagger > * { animation: fadeIn 0.4s ease-out both; }
+    .stagger > *:nth-child(1) { animation-delay: 0s; }
+    .stagger > *:nth-child(2) { animation-delay: 0.1s; }
+    .stagger > *:nth-child(3) { animation-delay: 0.2s; }
+    .stagger > *:nth-child(n+4) { animation-delay: 0.3s; }
+    .hover-lift { @apply transition-all duration-300 hover:shadow-md hover:-translate-y-0.5; }
+  </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen flex flex-col">
+
+<div class="flex-grow w-full">
+    
+    <!-- Header with Navigation -->
+    <header class="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-[#2a2a2a] sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium group">
+          <i class="fas fa-arrow-left text-sm transition-transform group-hover:-translate-x-1"></i>
+          Back to Home
+        </a>
+
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="flex-1 max-w-5xl mx-auto w-full px-3 sm:px-4 py-6 sm:py-8">
+      
+      <!-- Page Title -->
+      <section class="mb-8 sm:mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">Education</h1>
+        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Academic background and learning achievements</p>
+      </section>
+      
+      <!-- Education Cards -->
+      <div class="space-y-4 sm:space-y-5 stagger">
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Bachelor of Science, Information Technology</h2>
+            <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium mt-1">Pampanga State University</p>
+          </div>
+          
+          <!-- Meta Information -->
+          <div class="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 pb-4 border-b border-gray-100 dark:border-[#2a2a2a]">
+            <span class="flex items-center gap-1">
+              <i class="fas fa-calendar text-gray-400 text-[10px]"></i>
+              Sep 2022 – Present            </span>
+            <span class="inline-block px-3 py-1 rounded-md bg-gray-100 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-200 text-xs font-medium border border-gray-200 dark:border-[#333333] hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+              Currently Enrolled            </span>
+                      </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Pursuing comprehensive degree in Information Technology with focus on software development, cloud computing, cybersecurity, and embedded systems.          </p>
+          
+          <!-- Highlights -->
+          <div>
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Key Achievements</h3>
+            <ul class="space-y-1.5">
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Developed programming skills using C++ and Java, including object-oriented design</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Applied data structures, algorithms, and discrete mathematics to problem solving</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Designed and managed relational databases using DBMS and database programming concepts</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Built web and mobile applications with backend and database integration</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Conducted system analysis and design using standard software development methodologies</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Configured and managed computer networks using fundamental and advanced networking concepts</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Developed IoT-based systems integrating microcontrollers, sensors, and network communication</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Applied cybersecurity and information assurance principles to protect systems and data</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Implemented system integration and architecture solutions across multiple technologies</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Collaborated on team-based projects, including end-to-end Capstone Project development</span>
+              </li>
+                          </ul>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Senior High School, Information and Communications Technology</h2>
+            <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium mt-1">Emigdio A. Bondoc Senior High School | San Matias National High School</p>
+          </div>
+          
+          <!-- Meta Information -->
+          <div class="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 pb-4 border-b border-gray-100 dark:border-[#2a2a2a]">
+            <span class="flex items-center gap-1">
+              <i class="fas fa-calendar text-gray-400 text-[10px]"></i>
+              2020 – 2022            </span>
+            <span class="inline-block px-3 py-1 rounded-md bg-gray-100 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-200 text-xs font-medium border border-gray-200 dark:border-[#333333] hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+              Completed           </span>
+                        <span class="flex items-center gap-1">
+              <i class="fas fa-award text-gray-400 text-[10px]"></i>
+              With High Honors | First Honorable Mention            </span>
+                      </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Specialized ICT track with emphasis on practical information technology skills, animation, and technical foundations. ICT Work Immersion Trainee.     </p>
+          
+          <!-- Highlights -->
+          <div>
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Key Achievements</h3>
+            <ul class="space-y-1.5">
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Gained hands-on experience in 2D/3D animation, including character creation, motion principles, and storyboarding techniques</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Created visual assets such as logos, digital illustrations, and layout designs using industry-standard graphic design tools</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Performed basic computer hardware installation and configuration as part of technical training</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Applied fundamental programming concepts for simple interactive projects and digital outputs</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Produced animation sequences and multimedia designs meeting industry standards for Visual Graphic Design and Animation NC II/NC III competencies</span>
+              </li>
+                          </ul>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Junior High School</h2>
+            <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium mt-1">San Matias National High School</p>
+          </div>
+          
+          <!-- Meta Information -->
+          <div class="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 pb-4 border-b border-gray-100 dark:border-[#2a2a2a]">
+            <span class="flex items-center gap-1">
+              <i class="fas fa-calendar text-gray-400 text-[10px]"></i>
+              2016 – 2020            </span>
+            <span class="inline-block px-3 py-1 rounded-md bg-gray-100 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-200 text-xs font-medium border border-gray-200 dark:border-[#333333] hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+              Completed         </span>
+                        <span class="flex items-center gap-1">
+              <i class="fas fa-award text-gray-400 text-[10px]"></i>
+              With Honors            </span>
+                      </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Comprehensive junior high school education with specialization in TLE Specialization - Electrical Installation and Maintenance (EIM)          </p>
+          
+          <!-- Highlights -->
+          <div>
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Key Achievements</h3>
+            <ul class="space-y-1.5">
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Gained hands-on experience in basic electrical wiring, circuit installation, and troubleshooting simple electrical problems</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Learned proper use of electrical hand tools and power tools while following standard safety procedures</span>
+              </li>
+                            <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                <span>Applied basic electrical principles in practical activities such as wiring layouts, installing fixtures, and identifying common electrical faults</span>
+              </li>
+                          </ul>
+          </div>
+          
+        </article>
+              </div>
+      
+    </main>
+    
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-[#2a2a2a] bg-white dark:bg-[#111111] mt-10 sm:mt-12">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        <p class="mb-3">© 2026 Jan Raven D. Zapata. All Rights Reserved.</p>
+        <p class="text-gray-500 dark:text-gray-500">Developed with passion | Sto. Tomas, Pampanga, Philippines</p>
+      </div>
+    </footer>
+    
+</div>
+  
+
+  
+</body>
+</html>

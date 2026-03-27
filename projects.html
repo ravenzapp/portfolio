@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jan Raven D. Zapata – Projects</title>
+  <meta name="description" content="Portfolio projects and technical work samples of Jan Raven D. Zapata - IT professional developer."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    (function() {
+      const themeKey = 'jrz-theme';
+      const savedTheme = localStorage.getItem(themeKey);
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      }
+    })();
+  </script>
+  <style>
+    body { font-family: 'Geist', ui-sans-serif, system-ui; -webkit-font-smoothing: antialiased; }
+    .fade-in { animation: fadeIn 0.6s ease-out both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .stagger > * { animation: fadeIn 0.6s ease-out both; }
+    .stagger > *:nth-child(1) { animation-delay: 0s; }
+    .stagger > *:nth-child(2) { animation-delay: 0.5s; }
+    .stagger > *:nth-child(3) { animation-delay: 1s; }
+    .stagger > *:nth-child(n+4) { animation-delay: 1.5s; }
+    .hover-lift { @apply transition-all duration-300 hover:shadow-md hover:-translate-y-0.5; }
+  </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen flex flex-col">
+
+<div class="flex-grow w-full">
+    
+    <!-- Header with Navigation -->
+    <header class="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-[#2a2a2a] sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium group">
+          <i class="fas fa-arrow-left text-sm transition-transform group-hover:-translate-x-1"></i>
+          Back to Home
+        </a>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="flex-1 max-w-5xl mx-auto w-full px-3 sm:px-4 py-6 sm:py-8">
+      
+      <!-- Page Title -->
+      <section class="mb-8 sm:mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">Technical Projects</h1>
+        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Portfolio of completed and ongoing project work</p>
+      </section>
+      
+      <!-- Projects Cards -->
+      <div class="space-y-4 sm:space-y-5 stagger">
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Mobile App – Capstone Project</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">Capstone Project</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Designed and developed a mobile-based application as a capstone project to address a real-world problem. Implemented core application features including user interaction, data handling, and basic system logic, applying SDLC concepts, usability principles, and basic security considerations throughout.
+          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Designed and developed a mobile-based application to address a real-world problem</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Implemented core features including user interaction, data handling, and system logic</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Applied SDLC concepts, usability principles, and basic security considerations</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Mobile Development</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">SDLC</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">UI/UX Design</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Security</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Firebase</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Java</span>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Demonstrates comprehensive understanding of professional app development from conception to deployment</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="https://drive.google.com/drive/folders/1U9c5wz3Q8NYDx0R0RWnTw3lUBmj8Q3lw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Smart Home IoT System</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">IoT / Embedded Systems</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Developed a smart home IoT project integrating sensors and microcontrollers for automated monitoring and control. Programmed IoT components using C++ to collect and process sensor data, and integrated basic networking and cloud concepts for data transmission and monitoring.
+          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Integrated sensors and microcontrollers for automated home monitoring and control</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Programmed IoT components using C++ to collect and process sensor data</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Integrated basic networking and cloud concepts for data transmission and monitoring</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Applied troubleshooting and hardware integration skills to ensure system reliability</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">C++</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Arduino/Microcontroller</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">IoT Protocols</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Sensor Integration</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Cloud Computing</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Embedded Systems</span>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Demonstrates mastery of embedded systems and IoT concepts with real-world hardware integration and cloud connectivity</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="https://drive.google.com/drive/folders/1-tMJNxNhvYc8V1_AbucDGE5F231MmFs6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Web-Based Academic Applications</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">Web Development</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Designed and developed multiple web applications using HTML, CSS, JavaScript, and MySQL. Projects emphasize database-driven features for data storage and retrieval, with usability, documentation, and basic security principles applied throughout development.
+          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Designed and developed basic web applications using HTML, CSS, JavaScript, and MySQL</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Implemented database-driven features for data storage and retrieval</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Applied usability, documentation, and basic security principles during development</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">HTML5</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">CSS3</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">JavaScript</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">MySQL</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">PHP</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Web Security</span>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Comprehensive experience in full-stack web development with focus on database-driven applications and secure design</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="https://drive.google.com/drive/folders/15CiQTnhOmGzlRuclmIoLX5Fh44SqPGjJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Mobile Unit Converter Application</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">Mobile Development</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Designed and developed a mobile-based converter application focused on performing various unit conversions and calculations. Features core functionality including user interaction, input handling, calculation logic, and result display, with structured program logic and full documentation.
+          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Implemented core features including user interaction, input handling, calculation logic, and result display</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Applied basic usability principles, error handling, and structured program logic</span>
+                </li>
+                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Documented application functionality, design flow, and testing results</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Mobile Development</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Java</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">UI/UX Design</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Input Validation</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Error Handling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Testing</span>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Demonstrates end-to-end mobile app development with focus on user experience, structured logic, and code quality</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="https://drive.google.com/drive/folders/1C7ESKISADnf4sun2BPaQnrXNW_1rGdeL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+              </div>
+
+      <!-- TODO: More projects will be added soon — stay tuned for upcoming work including new personal projects, freelance work, and experimental builds. -->
+      
+    </main>
+    
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-[#2a2a2a] bg-white dark:bg-[#111111] mt-10 sm:mt-12">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        <p class="mb-3">© 2026 Jan Raven D. Zapata. All Rights Reserved.</p>
+        <p class="text-gray-500 dark:text-gray-500">Developed with passion | Sto. Tomas, Pampanga, Philippines</p>
+      </div>
+    </footer>
+    
+</div>
+  
+
+  
+</body>
+</html>
