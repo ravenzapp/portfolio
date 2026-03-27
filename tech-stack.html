@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jan Raven D. Zapata – Full Tech Stack</title>
-  <meta name="description" content="Comprehensive tech stack and technical skills of Jan Raven D. Zapata - IT student and developer."/>
+  <title>Jan Raven D. Zapata – Projects</title>
+  <meta name="description" content="Portfolio projects and technical work samples of Jan Raven D. Zapata - IT professional developer."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -28,183 +28,339 @@
   </script>
   <style>
     body { font-family: 'Geist', ui-sans-serif, system-ui; -webkit-font-smoothing: antialiased; }
-    .fade-in { animation: fadeIn 0.4s ease-out both; }
+    .fade-in { animation: fadeIn 0.6s ease-out both; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    .stagger > * { animation: fadeIn 0.4s ease-out both; }
+    .stagger > * { animation: fadeIn 0.6s ease-out both; }
     .stagger > *:nth-child(1) { animation-delay: 0s; }
-    .stagger > *:nth-child(2) { animation-delay: 0.1s; }
-    .stagger > *:nth-child(3) { animation-delay: 0.2s; }
-    .stagger > *:nth-child(n+4) { animation-delay: 0.3s; }
-    .hover-lift { @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+    .stagger > *:nth-child(2) { animation-delay: 0.5s; }
+    .stagger > *:nth-child(3) { animation-delay: 1s; }
+    .stagger > *:nth-child(n+4) { animation-delay: 1.5s; }
+    .hover-lift { @apply transition-all duration-300 hover:shadow-md hover:-translate-y-0.5; }
   </style>
 </head>
-<body class="antialiased bg-gray-50 dark:bg-black text-gray-900 dark:text-white min-h-screen">
+<body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen flex flex-col">
 
-  <!-- Page Container -->
-  <div class="flex-grow w-full">
+<div class="flex-grow w-full">
     
-    <main class="max-w-5xl mx-auto px-4 py-12">
-      
-      <!-- Page Header -->
-      <div class="mb-12 fade-in">
-        <a href="index.html" class="inline-flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium mb-6 group">
+    <!-- Header with Navigation -->
+    <header class="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-[#2a2a2a] sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-gray-900 dark:text-white transition text-sm sm:text-base font-medium group">
           <i class="fas fa-arrow-left text-sm transition-transform group-hover:-translate-x-1"></i>
-          <span>Back to Home</span>
+          Back to Home
         </a>
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">Full Tech Stack</h1>
-        <p class="text-lg text-gray-600 dark:text-gray-400">Comprehensive list of tools and technologies I work with.</p>
       </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="flex-1 max-w-5xl mx-auto w-full px-3 sm:px-4 py-6 sm:py-8">
+      
+      <!-- Page Title -->
+      <section class="mb-8 sm:mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">Technical Projects</h1>
+        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Portfolio of completed and ongoing project work</p>
+      </section>
+      
+      <!-- Projects Cards -->
+      <div class="space-y-4 sm:space-y-5 stagger">
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Mobile App – Capstone Project</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">Capstone Project</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Developing a comprehensive mobile application as a capstone project that addresses a real-world problem. This project emphasizes Software Development Life Cycle (SDLC) principles, usability testing, security best practices, and comprehensive documentation for enterprise-level deployment.          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Design and implement a solution to a real-world problem using SDLC methodology</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Apply security principles and best practices throughout the development lifecycle</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Conduct thorough usability testing and user experience optimization</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Document requirements, design, implementation, and testing processes</span>
+                </li>
+                              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Mobile Development</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">SDLC</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">UI/UX Design</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Security Testing</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Api Integration</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Database Design</span>
+                              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Demonstrates comprehensive understanding of professional app development from conception to deployment</p>
+          </div>
 
-      <!-- Tech Stack Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 stagger">
-                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
-            <i class="fas fa-laptop-code text-gray-500 dark:text-gray-400 text-lg"></i>
-            Frontend          </h2>
-          <div class="flex flex-wrap gap-2">
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              HTML            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              CSS            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              JavaScript            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              TypeScript            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              React            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Next.js            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Vue.js            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Tailwind CSS            </span>
-                      </div>
-        </section>
-                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
-            <i class="fas fa-server text-gray-500 dark:text-gray-400 text-lg"></i>
-            Backend &amp; Database          </h2>
-          <div class="flex flex-wrap gap-2">
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Node.js            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              PHP            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Laravel            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Python            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              MySQL            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              PostgreSQL            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              MongoDB            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Firebase            </span>
-                      </div>
-        </section>
-                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
-            <i class="fas fa-cloud text-gray-500 dark:text-gray-400 text-lg"></i>
-            Cloud &amp; DevOps          </h2>
-          <div class="flex flex-wrap gap-2">
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              AWS            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Docker            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Kubernetes            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              GitHub Actions            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              CI/CD            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Cloud Computing            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Cloud Infrastructure            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              IaaS            </span>
-                      </div>
-        </section>
-                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
-            <i class="fas fa-tools text-gray-500 dark:text-gray-400 text-lg"></i>
-            Tools &amp; Version Control          </h2>
-          <div class="flex flex-wrap gap-2">
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Git &amp; GitHub            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              VS Code            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              GitHub Pages            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              XAMPP            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Composer            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              npm            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Postman            </span>
-                      </div>
-        </section>
-                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
-            <i class="fas fa-palette text-gray-500 dark:text-gray-400 text-lg"></i>
-            Design &amp; Multimedia          </h2>
-          <div class="flex flex-wrap gap-2">
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Adobe Photoshop            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Figma            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Canva            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Video Editing            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Graphic Design            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Wireframing            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Prototyping            </span>
-                      </div>
-        </section>
-                <section class="bg-white dark:bg-[#111111] rounded-lg shadow-sm border border-gray-200 dark:border-[#2a2a2a] p-6 fade-in hover-lift">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900 dark:text-white">
-            <i class="fas fa-brain text-gray-500 dark:text-gray-400 text-lg"></i>
-            Specialized Skills          </h2>
-          <div class="flex flex-wrap gap-2">
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Cybersecurity            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              IoT            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Embedded Systems            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              AI Fundamentals            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              System Administration            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Network Troubleshooting            </span>
-                        <span class="border border-gray-200 dark:border-[#333333] text-gray-700 dark:text-gray-300 text-sm px-4 py-2 rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#1e1e1e] hover:shadow-sm transition">
-              Hardware Maintenance            </span>
-                      </div>
-        </section>
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Smart Home IoT System</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">IoT / Embedded Systems</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Designed and implemented an Internet of Things (IoT) system featuring multiple sensors and microcontrollers for automated home monitoring and control. The system leverages embedded programming in C++ to create intelligent automation solutions.          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Implement sensor integration for real-time environmental monitoring</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Develop microcontroller firmware in C++ for device control logic</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Create automation rules for intelligent decision-making</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Establish communication protocols between IoT devices</span>
+                </li>
+                              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">C++</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Arduino/Microcontroller</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">IoT Protocols</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Sensor Integration</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Embedded Systems</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Home Automation</span>
+                              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Demonstrates mastery of embedded systems and IoT concepts in real-world application</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Web-Based Academic Applications</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">Web Development</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Built multiple web applications using HTML5, CSS3, JavaScript, and MySQL databases. Projects emphasize secure design principles, database-driven features, responsive design, and practical solutions for academic management.          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Develop secure web applications with proper input validation and authentication</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Design and optimize MySQL databases for efficient data management</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Implement responsive UI with CSS3 and modern JavaScript</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Create RESTful APIs for frontend-backend communication</span>
+                </li>
+                              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">HTML5</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">CSS3</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">JavaScript</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">MySQL</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">PHP</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Responsive Design</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Web Security</span>
+                              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Comprehensive experience in full-stack web development with focus on database-driven applications</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
+                <article class="bg-white dark:bg-[#111111] rounded-lg border border-gray-200 dark:border-[#2a2a2a] p-4 sm:p-6 hover:shadow-md transition-shadow fade-in">
+          
+          <!-- Header -->
+          <div class="mb-4">
+            <div class="flex flex-col gap-1 mb-3">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Mobile Unit Converter Application</h2>
+              <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">Mobile Development</p>
+            </div>
+            </div>
+          
+          <!-- Description -->
+          <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
+            Developed a feature-rich mobile unit converter application with robust input handling, advanced calculation logic, comprehensive error handling, and excellent user experience. Includes full documentation covering design, implementation, and testing.          </p>
+          
+          <!-- Objectives and Technologies Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Objectives -->
+            <div class="lg:col-span-2">
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Project Objectives</h3>
+              <ul class="space-y-1.5">
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Implement comprehensive unit conversion calculations (length, weight, temperature, etc.)</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Design intuitive user interface for easy navigation and use</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Build robust error handling for invalid inputs</span>
+                </li>
+                                <li class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex gap-2">
+                  <span class="text-gray-600 dark:text-gray-400 font-bold flex-shrink-0">•</span>
+                  <span>Optimize performance for fast conversions and smooth ui</span>
+                </li>
+                              </ul>
+            </div>
+            
+            <!-- Technologies -->
+            <div>
+              <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-3">Tech Stack</h3>
+              <div class="flex flex-wrap gap-1.5 justify-center">
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Mobile Development</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">UI/UX Design</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Input Validation</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Calculation Logic</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Error Handling</span>
+                                <span class="text-[10px] px-1.5 py-0.5 rounded border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Testing</span>
+                              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Impact -->
+          <div class="mt-5 pt-5 border-t border-gray-100 dark:border-[#2a2a2a]">
+            <h3 class="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">Impact & Learning</h3>
+            <p class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Demonstrates end-to-end mobile app development with focus on user experience and code quality</p>
+          </div>
+
+          <!-- View Project Button -->
+          <div class="mt-4 flex justify-end">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200">
+              <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+              View Project
+            </a>
+          </div>
+          
+        </article>
               </div>
 
-     
+      <!-- TODO: More projects will be added soon — stay tuned for upcoming work including new personal projects, freelance work, and experimental builds. -->
+      
     </main>
-
+    
     <!-- Footer -->
-    <footer class="mt-16 py-8 border-t border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-[#0d0d0d]/50">
-      <div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-600 dark:text-gray-400">
-        <p class="mb-2">© 2026 Jan Raven D. Zapata. All Rights Reserved.</p>
-        <p>Developed with passion | Sto. Tomas, Pampanga, Philippines</p>
+    <footer class="border-t border-gray-200 dark:border-[#2a2a2a] bg-white dark:bg-[#111111] mt-10 sm:mt-12">
+      <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        <p class="mb-3">© 2026 Jan Raven D. Zapata. All Rights Reserved.</p>
+        <p class="text-gray-500 dark:text-gray-500">Developed with passion | Sto. Tomas, Pampanga, Philippines</p>
       </div>
     </footer>
+    
+</div>
+  
 
-  </div>
-
-
-
+  
 </body>
 </html>
